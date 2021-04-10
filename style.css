@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+.navlogo img{
+    width: 150px;
+    background-color: none;
+}
+
+
+
+h1{
+    font-size: 2.5rem;
+    
+    padding: 10px;
+    margin: 10px 5px;
+}
+h2{
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+
+a{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(139, 147, 156);
+    
+}
+
+.dothr{
+    border: dotted 6px ;
+    border-bottom: none;
+    margin: 0 auto;
+    width: 60px;
+
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar{
+    background-color: rgb(1, 141, 223);
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navhd{
+    color: aliceblue;
+    margin: 0;
+}
+
+.navmenu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+.navmenu a{
+    
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(37, 37, 231);
+ 
+}
+
+
+.navmenu a:hover{
+    background-color: gray;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* profile design starts from here */
+
+
+.profile{
+    padding: 130px 10px ;
+    position: relative;
+    text-align: center;
+}
+
+.profile .topice{
+    width: 150px;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    transition: 3s;
+}
+
+.profile .topice:hover{
+    transform: rotate(360deg);
+    
+}
+
+.prodesk h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+
+.prodesk p{
+    color: gray;
+    text-align: center;
+    width: 90%;
+    margin: o auto 20px auto;
+}
+
+.profile .topica{
+    width: 150px;
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    transition: 3s;
+}
+
+.profile .topica:hover{
+    transform: rotate(360deg);
+    
+}
+/* profile design ends here */
+
+
+
+
+ /* about me design starts from here */
+
+.aboutme{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+}
+.aboutme::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.aboutme p{
+    color: white;
+    text-align: center;
+    
+}
+
+.aboutme p a{
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.aboutimg img{
+border: 5px solid white;
+border-radius: 50%;
+height: 200px;
+width: 200px;
+text-align: center;
+}
+
+.btn{
+    background-color:  #052d2f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+}
+ /* about me design ends from here */
+
+ /* card design starts from here */
+
+ /* professionaexe starts */
+
+.professionaexe{
+    padding: 1% 0%;
+}
+
+.professionaexe .card{
+    background-color: #a39e9e ;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 700px;
+}
+
+.professionaexe .card:hover{
+box-shadow: 0px 4px 8px 5px black;
+}
+
+.cardic{
+    text-align: center;
+}
+
+.cardic img{
+width: 100px;
+border: 5px solid white;
+border-radius: 50%;
+padding: 15px;
+}
+
+.cardtit h2{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+}
+
+
+
+.professionaexe::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.carddesa{
+    padding: 45px;
+
+}
+.carddesa li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+.carddesa li::before{
+   content: '';
+   position: absolute;
+   background-color: rgb(86, 86, 153, .5);
+   width: 100%;
+   height: 19px;
+   top: calc(100% + 5px);
+   left: 0;
+   border-radius: 1000px;
+}
+
+.carddesa li::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(86, 86, 153, 1);
+    width: 0;
+    left: 0;
+    height: 19px;
+    top: calc(100% + 5px);
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+ }
+.carddesa li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 100%;
+    }
+}
+
+.carddesa li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 90%;
+    }
+}
+
+.carddesa li.jv::after{
+    animation-name: jv;
+}
+@keyframes jv{
+    to{
+        width: 85%;
+    }
+}
+
+.carddesa li.jq::after{
+    animation-name: jq;
+}
+@keyframes jq{
+    to{
+        width: 80%;
+    }
+}
+
+.carddesa li.nj::after{
+    animation-name: nj;
+}
+@keyframes nj{
+    to{
+        width: 70%;
+    }
+}
+
+.carddesa li.ej::after{
+    animation-name: ej;
+}
+@keyframes ej{
+    to{
+        width: 60%;
+    }
+}
+
+.carddesa li.gh::after{
+    animation-name: gh;
+}
+@keyframes gh{
+    to{
+        width: 50%;
+    }
+}
+
+.carddesa li.rj::after{
+    animation-name: rj;
+}
+@keyframes rj{
+    to{
+        width: 40%;
+    }
+}
+ /* professionaexe ends */
+
+
+ /* card design ends from here */
+
+
+ 
+ /* contact form design starts from here */
+.ach-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: white;
+}
+
+.achievement p{
+    color: white;
+}
+
+.contact{
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+
+.contact-link{
+    text-align: center;
+    padding: 1% 7%;
+}
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: white;
+    padding: 5px;
+    width: 50px;
+    margin: 15px;
+}
+
+.btn:hover{
+    background-color: gray;
+}
+.ach-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+ /* contact form design end from here */
+
+
+ /* footer starts from here */
+.footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.r3 a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.r3 a:hover{
+    color: gray;
+}
+
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+ /* footer ends from here */
+
+
+ 

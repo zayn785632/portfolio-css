@@ -1,0 +1,132 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* navbar design starts here */
+.navlogo{
+    text-align: left;
+}
+
+.navhd{
+    text-align: right;
+    
+}
+
+.navmenu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navmenu a{
+    padding: 10px 10px;
+    margin: 30px 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+/* nav bar design ends here */
+
+/* profile design starts here */
+.profile .topice{
+    width: 150px;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    transition: width 3s;
+}
+
+.profile .topice:hover{
+    width: 180px;
+}
+
+.profile .topica{
+    width: 150px;
+    position: absolute;
+    left: 140px;
+    bottom: 20px;
+    transition: width 3s;
+}
+
+.profile .topica:hover{
+    width: 180px;
+}
+
+.prodesk p{
+    color: gray;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto ;
+    margin-bottom: 10px;
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* profile design end here */
+
+/* aboutme s*/
+.aboutimg img{
+    margin-top: 100px;
+    width: 270px;
+    height: 250px;
+}
+.aboutme p{
+    text-align: left;
+}
+/* aboutme e*/
+
+/* card design starts from here */
+
+.professionaexe{
+    padding: 1% 5%;
+}
+
+/* card design ends from here */
+
+ /* contact form design starts from here */
+
+ .achievement{
+     padding-right: 50px;
+
+ }
+
+ .contact button{
+  
+    width: 110px;
+}
+
+.contact-link{
+    position: relative;
+}
+
+.media-buttons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 150px;
+}
+ /* contact form design ends from here */
+ 
+
+ /* footer starts from here */
+
+
+.r3{
+    margin-top: 12px;
+}
+.r3 a{
+    display: inline;
+    margin: 10px;
+}
+
+ /* footer ends from here */
